@@ -1,0 +1,105 @@
+body {
+  background-color: #F9D1CC; /* Pastel color */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #8B0000; /* Dark red */
+  font-size: 50px;
+  text-shadow: 2px 2px #F5A9A9; /* Light red */
+}
+
+p {
+	font-size: 20px;
+}
+.photo-frame {
+  width: 300px;
+  height: 250px;
+  border: 10px solid #8B5E3C; /* wood brown */
+  border-radius: 20px;
+  box-shadow: 4px 4px #8B5E3C;
+  margin-bottom:5%;
+}
+
+.message {
+  width: 800px;
+  height: 350px;
+  padding: 10px;
+  font-size: 20px;
+  border: 10px solid #8B5E3C; /* wood brown */
+  border-radius: 20px;
+  margin-top: 20%;
+  margin: auto;
+  box-shadow: 4px 4px #8B5E3C;
+}
+.butterflies {
+  position: absolute;
+  top: 80%;
+  left: 85%;
+  transform: translate(-80%, -80%);
+}
+
+.butterflies img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation: fly 10s infinite;
+}
+
+.butterflies img:nth-of-type(1) {
+  animation-duration: 12s;
+  top: 0;
+  left: 0;
+}
+
+.butterflies img:nth-of-type(2) {
+  animation-duration: 15s;
+  top: 20%;
+  right: 0;
+}
+
+.butterflies img:nth-of-type(3) {
+  animation-duration: 8s;
+  bottom: 0;
+  left: 50%;
+}
+
+.flowers {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-20%, -20%);
+}
+
+.flowers img {
+  width: 160px;
+  height: 160px;
+  transition: transform 1s;
+}
+
+.flowers img:hover {
+  transform: rotate(360deg);
+}
+
+@keyframes fly {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
